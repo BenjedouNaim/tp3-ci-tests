@@ -1,10 +1,6 @@
 pipeline {
     agent any
 
-    environment {
-        // Jenkins tourne en service (LocalSystem) : on ajoute Python et .NET au PATH
-        PATH+PYTHON = "C:\\Users\\naimb\\AppData\\Local\\Programs\\Python\\Python314;C:\\Users\\naimb\\AppData\\Local\\Programs\\Python\\Python314\\Scripts;C:\\Program Files\\dotnet"
-    }
 
     stages {
         stage('Checkout') {
